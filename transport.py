@@ -62,6 +62,7 @@ class Sender:
         # Find the smallest unacked seq
         for seq in self.unacknowledged:
             self.next_seq = min(seq, self.next_seq)
+        self.unacknowledged = set()
 
     def ack_packet(self, sacks: List[Tuple[int, int]], packet_id: int) -> int:
         ''' Process acknowledgment packets '''
