@@ -1,14 +1,6 @@
 Custom Transport Layer Protocol
 This project implements a custom transport layer protocol in Python over UDP, providing reliable data transfer between a sender and a receiver. The protocol mimics some of the functionalities of TCP, such as segmentation, acknowledgment, and retransmission of lost packets. This project was completed as part of a network programming assignment.
 
-Table of Contents
-Project Overview
-Features
-Requirements
-Setup
-Usage
-Testing
-Notes
 Project Overview
 In this project, a transport layer program ensures reliable data delivery using a sender-receiver model. The sender transmits a large message in segments (packets) to the receiver over an unreliable network link, where packets may be delayed, lost, or received out of order. The receiver acknowledges received packets and requests retransmission of any missing ones. Key functionalities include flow control through a constant receive window and (optionally) handling packet reordering.
 
